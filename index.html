@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>My Blog Landing Page</title>
+</head>
+<body class="bg-[#0a0f2b] text-white font-sans">
+
+  <!-- Navigation -->
+  <nav class="flex items-center justify-between p-6">
+    <div class="text-2xl font-bold">MyBlog</div>
+    <ul class="flex space-x-6">
+      <li><a href="#" class="hover:text-gray-300">Home</a></li>
+      <li><a href="#" class="hover:text-gray-300">About</a></li>
+      <li><a href="#" class="hover:text-gray-300">Posts</a></li>
+      <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="relative h-screen flex flex-col items-center justify-center text-center px-4"
+          style="background: url('https://source.unsplash.com/1600x900/?space,stars') no-repeat center/cover;">
+    <div class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80"></div>
+    <div class="z-10 max-w-2xl space-y-6">
+      <h1 class="text-5xl md:text-6xl font-extrabold uppercase">Welcome to MyBlog</h1>
+      <p class="text-lg md:text-xl">Insights, tutorials, and stories from the frontier of web design.</p>
+      <a href="#posts"
+         class="inline-block mt-4 px-8 py-4 bg-[#ED4122] rounded-full text-lg font-semibold hover:bg-red-600">
+        Read Latest Posts
+      </a>
+    </div>
+  </header>
+
+  <!-- Featured Posts Grid -->
+  <section id="posts" class="py-16 px-6 bg-[#0f163d]">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold mb-8">Featured Articles</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Repeat for each post -->
+        <div class="bg-[#1a2150] rounded-2xl shadow-lg overflow-hidden">
+          <img src="https://source.unsplash.com/400x300/?coding" alt="Post image" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold mb-2">Building Modern UIs</h3>
+            <p class="text-gray-300 mb-4">Learn how to craft responsive, accessible interfaces with the latest tools.</p>
+            <a href="#" class="text-[#ED4122] font-medium hover:underline">Continue Reading →</a>
+          </div>
+        </div>
+        <!-- ... -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 px-6 text-center bg-[#0a0f2b]">
+    <p class="text-gray-500">&copy; 2025 MyBlog. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
